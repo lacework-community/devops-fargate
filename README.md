@@ -1,5 +1,11 @@
-circleci-demo-aws-ecs-ecr
+Lacework Agent in AWS ECS Fargate Demo
 =========================
+
+This demo is a dockerized web golang app. 
+
+CI/CD: CircleCI (with Orbs)
+IaC: Terraform AWS Provider (with CloudFormation)
+Registry: ECR
 
 [![CircleCI](https://circleci.com/gh/CircleCI-Public/circleci-demo-aws-ecs-ecr.svg?style=svg)](https://circleci.com/gh/CircleCI-Public/circleci-demo-aws-ecs-ecr/tree/orbs)
 
@@ -8,12 +14,11 @@ circleci-demo-aws-ecs-ecr
 ## Deploy to AWS ECS from ECR via CircleCI 2.0 (Example Project)
 This project is an update of the https://github.com/circleci/go-ecs-ecr project to
 deploy to AWS ECS from ECR on CircleCI 2.0.
-This project builds and deploys a "Hello World" Go webapp. It provides an example of how to build and test a Dockerized 
-web application on [CircleCI](https://circleci.com), push the Docker image to an Amazon Elastic Container Registry (ECR), and then deploy to Amazon Elastic Container Service (ECS) using AWS Fargate.
+This project builds and deploys a "Hello World" Go webapp. It provides an example of how to build and test a Dockerized web application on [CircleCI](https://circleci.com), push the Docker image to an Amazon Elastic Container Registry (ECR), and then deploy to Amazon Elastic Container Service (ECS) using AWS Fargate.
 
 ## Prerequisites
 ### Set up required AWS resources
-Builds of this project rely on AWS resources to be present in order to succeed. For convenience, the prerequisite AWS resources may be created using the terraform scripts procided in the `terraform_setup` directory.
+Builds of this project rely on AWS resources to be present in order to succeed. For convenience, the prerequisite AWS resources may be created using the terraform scripts provided in the `terraform_setup` directory.
 1. Ensure [terraform](https://www.terraform.io/) is installed on your system.
 2. Edit `terraform_setup/terraform.tfvars` to fill in the necessary variable values (an Amazon account with sufficient privileges to create resources like an IAM account, VPC, EC2 instances, Elastic Load Balancer, etc is required). (It is not advisable to commit this file to a public repository after it has been populated with your AWS credentials)
 3. Use terraform to create the AWS resources

@@ -1,2 +1,5 @@
 # Demo app executable
 demo-app
+terraform_setup/terraform.tfvars
+terraform_setup/.terraform*
+terraform_setup/terraform.tfvars
