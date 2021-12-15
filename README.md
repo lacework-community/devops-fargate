@@ -1,4 +1,6 @@
 Lacework Agent in AWS ECS Fargate Demo
+
+[![IaC](https://app.soluble.cloud/api/v1/public/badges/dfe8c44a-fa57-463b-acdb-7d6c12d91916.svg)](https://app.soluble.cloud/repos/details/github.com/desteves/devops-fargate)  
 =========================
 
 This demo is a dockerized web golang app. 
