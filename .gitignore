@@ -1,2 +1,4 @@
-# Demo app executable
-demo-app
+RECYCLE_BIN/*
+tf-*/.terraform*
+tf-*/terraform.tfvars
+tf-ecr/cloudformation-templates/ecr.yml
